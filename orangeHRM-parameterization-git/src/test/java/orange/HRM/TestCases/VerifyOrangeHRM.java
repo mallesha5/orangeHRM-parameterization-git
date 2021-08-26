@@ -70,7 +70,9 @@ public class VerifyOrangeHRM
 		}
 		ExcelUtil.ExcelQuit();		//closing the test data sheet
 		
+		//Logout from OrangeHRM
 		logout.logoutOrangeHRM();
+		
 		//Quit the WebDriver instance
 		Webdriver.QuitWebDriver();
 	}

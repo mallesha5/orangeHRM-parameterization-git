@@ -9,6 +9,8 @@ import org.testng.Assert;
 
 /**
  * @author Mallesh
+ * 
+ * This class will store all the locators and methods of dashboard page
  *
  */
 public class DashboardPage 

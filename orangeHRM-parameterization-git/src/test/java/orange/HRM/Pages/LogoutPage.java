@@ -10,6 +10,7 @@ import org.testng.Assert;
 /**
  * @author Mallesh
  *
+ * This class will store all the locators and methods of logout page
  */
 public class LogoutPage 
 {

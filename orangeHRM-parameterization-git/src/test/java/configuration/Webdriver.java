@@ -14,6 +14,8 @@ import org.testng.annotations.BeforeTest;
 
 /**
  * @author Mallesh
+ * 
+ * This class handles the launching and quitting of webdriver
  *
  */
 public class Webdriver
