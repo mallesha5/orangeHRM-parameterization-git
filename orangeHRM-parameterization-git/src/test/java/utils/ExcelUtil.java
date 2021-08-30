@@ -17,7 +17,8 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
  *
  */
 public class ExcelUtil 
-{	public static int rows,cols;
+{	
+	public static int rows,cols;
 	static XSSFWorkbook wb;
 	static XSSFSheet sheet1;
 	

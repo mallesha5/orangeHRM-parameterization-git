@@ -2,15 +2,23 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="102181" started-at="2021-08-26T23:22:48 IST" finished-at="2021-08-26T23:24:30 IST">
+  <suite name="Default suite" duration-ms="98680" started-at="2021-08-27T19:54:58 IST" finished-at="2021-08-27T19:56:37 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="102181" started-at="2021-08-26T23:22:48 IST" finished-at="2021-08-26T23:24:30 IST">
+    <test name="Default test" duration-ms="98680" started-at="2021-08-27T19:54:58 IST" finished-at="2021-08-27T19:56:37 IST">
       <class name="orange.HRM.TestCases.VerifyOrangeHRM">
-        <test-method status="PASS" signature="VerifyOrangeHRMSearch()[pri:0, instance:orange.HRM.TestCases.VerifyOrangeHRM@6121c9d6]" name="VerifyOrangeHRMSearch" duration-ms="102116" started-at="2021-08-26T23:22:48 IST" finished-at="2021-08-26T23:24:30 IST">
+        <test-method status="PASS" signature="InitializeWebDriverAndLaunchBrowser()[pri:0, instance:orange.HRM.TestCases.VerifyOrangeHRM@2a70a3d8]" name="InitializeWebDriverAndLaunchBrowser" is-config="true" duration-ms="6740" started-at="2021-08-27T19:54:58 IST" finished-at="2021-08-27T19:55:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InitializeWebDriverAndLaunchBrowser -->
+        <test-method status="PASS" signature="VerifyOrangeHRMSearch()[pri:0, instance:orange.HRM.TestCases.VerifyOrangeHRM@2a70a3d8]" name="VerifyOrangeHRMSearch" duration-ms="91225" started-at="2021-08-27T19:55:05 IST" finished-at="2021-08-27T19:56:36 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyOrangeHRMSearch -->
+        <test-method status="PASS" signature="TerminateBrowser()[pri:0, instance:orange.HRM.TestCases.VerifyOrangeHRM@2a70a3d8]" name="TerminateBrowser" is-config="true" duration-ms="672" started-at="2021-08-27T19:56:36 IST" finished-at="2021-08-27T19:56:37 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TerminateBrowser -->
       </class> <!-- orange.HRM.TestCases.VerifyOrangeHRM -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

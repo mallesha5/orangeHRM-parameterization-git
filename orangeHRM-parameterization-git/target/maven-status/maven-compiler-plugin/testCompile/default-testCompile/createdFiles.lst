@@ -1,5 +1,7 @@
-orange\HRM\Pages\LogoutPage.class
-orange\HRM\Pages\DashboardPage.class
-configuration\hooks.class
+configuration\Webdriver.class
+orange\HRM\Pages\DirectoryPage.class
 orange\HRM\Pages\LoginPage.class
+orange\HRM\Pages\LogoutPage.class
+utils\ExcelUtil.class
+orange\HRM\Pages\DashboardPage.class
 orange\HRM\TestCases\VerifyOrangeHRM.class

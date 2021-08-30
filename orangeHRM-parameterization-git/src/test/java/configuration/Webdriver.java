@@ -26,7 +26,7 @@ public class Webdriver
 	public static WebDriver InitializeWebDriver()
 	{
 		
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\W10-Dell\\Documents\\softwares\\Selenium\\chromedriver_win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "src\\test\\resources\\Webdriver\\Chrome\\chromedriver.exe");
 		
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();

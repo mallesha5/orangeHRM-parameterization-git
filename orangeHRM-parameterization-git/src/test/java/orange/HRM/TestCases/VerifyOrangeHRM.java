@@ -14,6 +14,8 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import configuration.Webdriver;
@@ -29,15 +31,18 @@ import utils.ExcelUtil;
  */
 public class VerifyOrangeHRM 
 {
-	
 	WebDriver driver;
+	
+	@BeforeTest
+	public void InitializeWebDriverAndLaunchBrowser()
+	{
+		//Initializing the WebDriver, launching the browser and navigating to OrangeHRM site
+		driver = Webdriver.InitializeWebDriver();
+	}
 	
 	@Test
 	public void VerifyOrangeHRMSearch() throws Exception
 	{
-		//Initializing and launching the WebDriver and navigating to OrangeHRM site
-		driver = Webdriver.InitializeWebDriver();
-		
 		//Creating the objects for pages
 		LoginPage login = new LoginPage(driver);
 		DashboardPage dashboard = new DashboardPage(driver);
@@ -72,7 +77,11 @@ public class VerifyOrangeHRM
 		
 		//Logout from OrangeHRM
 		logout.logoutOrangeHRM();
-		
+	}
+	
+	@AfterTest
+	public void TerminateBrowser()
+	{
 		//Quit the WebDriver instance
 		Webdriver.QuitWebDriver();
 	}
