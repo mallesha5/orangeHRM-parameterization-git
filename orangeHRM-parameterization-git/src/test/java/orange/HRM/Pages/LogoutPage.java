@@ -16,7 +16,7 @@ public class LogoutPage
 {
 	WebDriver driver;
 	
-	By logoutMenu = By.id("welcome");
+	By logoutMenu = By.className("oxd-userdropdown-name");
 	By logoutBtn = By.linkText("Logout");
 	
 	public LogoutPage(WebDriver driver) 

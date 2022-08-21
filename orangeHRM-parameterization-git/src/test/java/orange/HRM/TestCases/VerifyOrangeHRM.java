@@ -23,6 +23,7 @@ import orange.HRM.Pages.DashboardPage;
 import orange.HRM.Pages.DirectoryPage;
 import orange.HRM.Pages.LoginPage;
 import orange.HRM.Pages.LogoutPage;
+import orange.HRM.Pages.PIMPage;
 import utils.ExcelUtil;
 
 /**
@@ -45,6 +46,7 @@ public class VerifyOrangeHRM
 	{
 		//Creating the objects for pages
 		LoginPage login = new LoginPage(driver);
+		PIMPage pim = new PIMPage(driver);
 		DashboardPage dashboard = new DashboardPage(driver);
 		LogoutPage logout = new LogoutPage(driver);
 		DirectoryPage directory = new DirectoryPage(driver);
@@ -59,11 +61,16 @@ public class VerifyOrangeHRM
 		//Login to OrangeHRM with username and password
 		login.loginToOrangeHRM("Admin","admin123");
 		
+		//validating the pim page
+		pim.verifyPIMLogo();
+		
 		//Validating the dashboard page
 		dashboard.verifyDashboardLogo();
 		
 		//Validating the directory page
 		directory.verifyDirectoryLogo();
+		
+		
 
 		//Searching all the names from test data sheet in the directory page and updating the search results in the same test data sheet
 		for (int i=1;i<noOfRows;i++)
@@ -71,7 +78,7 @@ public class VerifyOrangeHRM
 			String searchName = ExcelUtil.ExcelRead(i, 2);
 			String srcRes = directory.searchDirectory(searchName);
 			ExcelUtil.ExcelWrite(i, 3, srcRes);		//writing search result to test data sheet
-			directory.clickReset();
+			directory.clickReset();	
 		}
 		ExcelUtil.ExcelQuit();		//closing the test data sheet
 		

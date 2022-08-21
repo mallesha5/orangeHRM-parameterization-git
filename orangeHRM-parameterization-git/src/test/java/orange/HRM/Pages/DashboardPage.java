@@ -17,7 +17,8 @@ public class DashboardPage
 {
 	WebDriver driver;
 	
-	By logo = By.xpath("//*[@class=\"head\"]/h1");
+	By dashboardLink = By.linkText("Dashboard");
+	By logo = By.className("oxd-topbar-header-breadcrumb-module");
 	
 	public DashboardPage(WebDriver driver)
 	{
@@ -26,6 +27,7 @@ public class DashboardPage
 	
 	public void verifyDashboardLogo()
 	{
+		driver.findElement(dashboardLink).click();
 		String logoText = driver.findElement(logo).getText();
 		Assert.assertEquals(logoText, "Dashboard");
 	}
