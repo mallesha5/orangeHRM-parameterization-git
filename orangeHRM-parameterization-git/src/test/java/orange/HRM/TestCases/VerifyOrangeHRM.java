@@ -62,7 +62,7 @@ public class VerifyOrangeHRM
 		login.loginToOrangeHRM("Admin","admin123");
 		
 		//validating the pim page
-		pim.verifyPIMLogo();
+		//pim.verifyPIMLogo();
 		
 		//Validating the dashboard page
 		dashboard.verifyDashboardLogo();
